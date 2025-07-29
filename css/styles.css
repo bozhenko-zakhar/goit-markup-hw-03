@@ -30,8 +30,8 @@ button {
 
 .container { 
 	max-width: 1158px;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto;
+	padding: 0 15px
 }
 
 .section {
@@ -51,6 +51,7 @@ button {
 }
 
 .page-header {
+	padding: 24px 0;
 	border-bottom: 1px solid #E7E9FC;
 }
 
@@ -69,12 +70,13 @@ button {
 }
 
 .header-nav {
-	padding: 24px 0;
+	display: flex;
+	align-items: center; 
 }
 
 .nav-list {
 	display: inline-flex;
-	column-gap: 40px;
+	gap: 40px;
 }
 
 .nav-link {
@@ -86,13 +88,12 @@ button {
 }
 
 .contacts {
-	padding: 24px 0;
 	font-style: normal;
 }
 
 .contacts-list {
-	display: inline-flex;
-	column-gap: 40px;
+	display: flex;
+	gap: 40px;
 }
 
 .contacts-link {
@@ -116,7 +117,7 @@ button {
 }
 
 .hero-heading {
-	width: 496px;
+	max-width: 496px;
 	margin-bottom: 48px;
 	font-size: 56px;
 	line-height: 1.07;
@@ -126,6 +127,7 @@ button {
 }
 
 .order-button {
+	min-width: 169px;
 	font-weight: 500;
 	line-height: 1.5;
 	letter-spacing: 0.04em;
@@ -172,11 +174,11 @@ button {
 
 .benefits-list {
 	display: flex;
-	column-gap: 24px;
+	gap: 24px;
 }
 
-.benefits-list .benefits-item {
-	flex-basis: 264px;
+.benefits-list .benefits-item, .team-item {
+	width: calc((100% - 72px) / 4);
 }
 
 .team {
@@ -195,16 +197,17 @@ button {
 
 .team-list {
 	display: flex;
-	column-gap: 24px;
-}
-
-.team-member {
-	margin: 32px 16px;
-	text-align: center;
+	gap: 24px;
 }
 
 .team-item, .portfolio-item {
 	background: #fff;	
+	border-radius: 0px 0px 4px 4px;
+}
+
+.team-member {
+	padding: 32px 0;
+	text-align: center;
 }
 
 .team-item > .subtitle,
@@ -221,8 +224,7 @@ button {
 }
 
 .portfolio-info {
-	padding: 32px 0;
-	padding-left: 16px;
+	padding: 32px 16px;
 	border: 1px solid #E7E9FC;
 	border-top: transparent;
 }
