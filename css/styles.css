@@ -1,19 +1,46 @@
+ /* calc ( (parent width - sum of gaps) / quantity of siblings ) */
+
 body {
 	font-family: "Roboto", sans-serif;
 	color: #434455;
 	background-color: #fff;
 }
 
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+p {
+	margin: 0;
+}
+
 ul {
 	list-style: none;
+	margin: 0;
+	padding-left: 0;
+}
+
+img {
+	display: block;
 }
 
 button {
 	cursor: pointer;
 }
 
+.container { 
+	max-width: 1158px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.section {
+	padding: 120px 0;
+}
+
 .logo {
 	font-family: "Raleway", sans-serif;
+	margin-right: 76px;
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 1.17;
@@ -21,6 +48,16 @@ button {
 	text-transform: uppercase;
 	text-decoration: none;
 	color: #4d5ae5;
+}
+
+.page-header {
+	border-bottom: 1px solid #E7E9FC;
+}
+
+.page-header .container {
+	display: flex;
+	justify-content: space-between;
+	column-gap: 332px;
 }
 
 .page-header .logo-part {
@@ -31,6 +68,15 @@ button {
 	color: #f4f4fd;
 }
 
+.header-nav {
+	padding: 24px 0;
+}
+
+.nav-list {
+	display: inline-flex;
+	column-gap: 40px;
+}
+
 .nav-link {
 	font-weight: 500;
 	line-height: 1.5;
@@ -38,8 +84,15 @@ button {
 	color: #2e2f42;
 	text-decoration: none;
 }
+
 .contacts {
+	padding: 24px 0;
 	font-style: normal;
+}
+
+.contacts-list {
+	display: inline-flex;
+	column-gap: 40px;
 }
 
 .contacts-link {
@@ -58,9 +111,13 @@ button {
 
 .hero {
 	background-color: #2e2f42;
+	padding: 188px 0;
+	display: flex;
 }
 
 .hero-heading {
+	width: 496px;
+	margin-bottom: 48px;
 	font-size: 56px;
 	line-height: 1.07;
 	letter-spacing: 0.02em;
@@ -69,12 +126,16 @@ button {
 }
 
 .order-button {
-	border: none;
 	font-weight: 500;
 	line-height: 1.5;
 	letter-spacing: 0.04em;
+	padding: 16px 32px;
+	border-radius: 4px;
+	border: none;
 	color: #fff;
 	background: #4d5ae5;
+	display: block;
+	margin: auto;
 }
 
 .order-button:hover,
@@ -83,6 +144,7 @@ button {
 }
 
 .subtitle {
+	margin-bottom: 8px;
 	font-weight: 500;
 	font-size: 20px;
 	line-height: 1.2;
@@ -95,17 +157,50 @@ button {
 	letter-spacing: 0.02em;
 }
 
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.benefits-list {
+	display: flex;
+	column-gap: 24px;
+}
+
+.benefits-list .benefits-item {
+	flex-basis: 264px;
+}
+
 .team {
 	background-color: #f4f4fd;;
 }
 
 .team-heading, .portfolio-heading {
+	margin-bottom: 72px;
 	text-transform: capitalize;
 	font-size: 36px;
 	line-height: 1.11;
 	letter-spacing: 0.02em;
 	text-align: center;
 	color: #2e2f42;
+}
+
+.team-list {
+	display: flex;
+	column-gap: 24px;
+}
+
+.team-member {
+	margin: 32px 16px;
+	text-align: center;
 }
 
 .team-item, .portfolio-item {
@@ -117,10 +212,32 @@ button {
 	text-align: center;
 }
 
+.portfolio-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 48px 24px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.portfolio-info {
+	padding: 32px 0;
+	padding-left: 16px;
+	border: 1px solid #E7E9FC;
+	border-top: transparent;
+}
+
 .page-footer {
+	padding: 100px 0;
 	background: #2e2f42;
+}
+
+.page-footer .logo {
+	display: inline-block;
+	margin-bottom: 16px;
 }
 
 .page-footer .desc {
 	color: #f4f4fd;
+	width: 264px;
 }
